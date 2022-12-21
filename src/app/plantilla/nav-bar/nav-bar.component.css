@@ -1,3 +1,5 @@
+
+
 .container-nav {
 box-shadow: 3px 0px 5px #000;
 height: 80px;
@@ -13,9 +15,16 @@ nav {
 
 }
 
+p{
+    width: 150px;
+    text-align: center;
+    font-family:'Merriweather', serif;
+    font-weight: 700;
+}
+
 
 img {
-    width: 70px;
+    width: 170px;
     justify-self: flex-start;
   }
   
@@ -28,10 +37,6 @@ ul{
     height: 100%;
 }
 
-li{
-    margin-left: 20px;
-   
-}
 
 a{
     color: rgb(27, 27, 27);
@@ -42,20 +47,17 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
-}
-
-a:focus{
-    border-bottom: solid 2px  #1A66A2;
+    min-width: 130px;
+    transition: 0.5s;
 }
 
 a:hover{
-
+    background-color: #77c3fd34;
 }
 
 i{
     margin-right: 5px;
-    color: #1A66A2 ;
+    color: #1AA94F;
 }
 
 

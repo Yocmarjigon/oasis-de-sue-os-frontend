@@ -1,11 +1,12 @@
 <div class="container-nav">
     <nav>
-        <img src="../../../assets/image/logo-removebg.png" alt="logo">
+        <img src="./../../../assets/image/logo.svg" alt="logo">
         <ul>
-            <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
-            <li><a href="#"><i class="fa-solid fa-question"></i>Quiènes somos</a></li>
-            <li><a href="#"><i class="fa-solid fa-exclamation"></i>Nosotros</a></li>
+            <li><a (click)="activador()" #asBtnNav routerLink="/"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a #asBtnNav href="#"><i class="fa-solid fa-question"></i>Quiènes somos</a></li>
+            <li><a #asBtnNav href="#"><i class="fa-solid fa-exclamation"></i>Nosotros</a></li>
+            <li><a #asBtnNav href="#"><i class="fa-brands fa-product-hunt"></i>Productos y Servicios</a></li>
         </ul>
-        <a href="">Registrarse</a>
+        <a href=""><i class="fa-solid fa-registered"></i>Registrarse</a>
     </nav>
 </div>
