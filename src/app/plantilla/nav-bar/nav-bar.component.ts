@@ -1,4 +1,7 @@
-import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+
+import { animate } from '@angular/animations';
+import { NgClass } from '@angular/common';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,14 +12,31 @@ import { Router } from '@angular/router';
 
 
 
-export class NavBarComponent {
+export class NavBarComponent implements OnInit {
   @ViewChild('asBtnNav') btnNab!: ElementRef;
+  @ViewChild('asNavBar') navBar!: ElementRef;
+  @ViewChild('asBtnBars') btnBars!: ElementRef;
+
+  activar: boolean= true
 
   constructor( private route: Router ,private render2: Renderer2){}
 
+
+  ngOnInit(): void {
+    console.log()
+  }
+
+
   activador (){
-    const btnNab = this.btnNab.nativeElement; 
-    this.render2.setStyle(btnNab, 'border-botton', 'solid 2px #1AA94F')
+    this.activar = !this.activar
+    const navBar = this.navBar.nativeElement;
+    const btnBars = this.btnBars.nativeElement;
+    if(this.activar === true){ 
+      this.render2.setStyle(navBar, 'left', '-300px')
+    }else{this.render2.setStyle(navBar, 'left', '0'), this.render2.setStyle(btnBars, 'animation', ' barras')}
+   
+  
+
   }
 
 }

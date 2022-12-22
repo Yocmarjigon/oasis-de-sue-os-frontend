@@ -1,11 +1,17 @@
-<div class="container-nav">
-    <nav>
+
+<div #asNavBar class="container-nav">
+    <nav class="panel-navegacion">
         <img src="../../../assets/image/logo.svg" alt="logo">
         <ul>
-            <li><a  routerLink="/inicio" ><i class="fa-solid fa-house"></i>Inicio</a></li>
-            <li><a routerLink="/quienes-somos"><i class="fa-solid fa-question"></i>Quienes somos</a></li>
-            <li><a routerLink="/nosotros"><i class="fa-solid fa-exclamation"></i>Nosotros</a></li>
+            <li class="btn-router" ><a  routerLink="/inicio" ><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li class="btn-router" ><a routerLink="/quienes-somos"><i class="fa-solid fa-question"></i>Quienes somos</a></li>
+            <li class="btn-router" ><a routerLink="/nosotros"><i class="fa-solid fa-exclamation"></i>Nosotros</a></li>
         </ul>
-        <a href="#" class="btn">Registrarse</a>
+        <a href="#" class="btn-registrarse">Registrarse</a>
     </nav>
+</div>
+
+<div class="container-btn-nav">
+    <img class="logo-movil" src="../../../assets/image/logo.svg" alt="logo">
+    <button #asBtnBars (click)="activador()" class="btn-bars"><i class="fa-solid fa-bars"></i></button>
 </div>

@@ -56,7 +56,7 @@ nav ul li a i {
     color: rgb(255, 166, 1);
 }
 
-.btn{
+.btn-registrarse{
     background-color: orange;;
     color: #fff;
     text-decoration: none;
@@ -67,14 +67,84 @@ nav ul li a i {
     border-radius: 30px;
     transition: transform .5s;
 }
-.btn:hover{
+.btn-registrarse:hover{
     transform: scale(1.2);
+}
+
+.btn-bars{
+    display: none;
+}
+
+.logo-movil{
+    display: none;
 }
 
 /* estilos moviles */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     .container-nav{
-        background-color: gray;
+        background-color: rgb(0, 0, 0);
+        width: 250px;
+        height: 100vh;
+        position: absolute;
+        /* left: -300px; */
+        transition: 1s;
+    }
+    img{
+        width: 140px;
+       
+    }
+
+    nav{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    ul{
+        height: 400px;
+    }
+    .btn-router{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    a{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .container-btn-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .btn-bars{
+        display: inline-block;
+        background-color: transparent;
+        font-size: 2.5em;
+        border: none;
+        color: rgb(255, 166, 1);
+
+    }
+
+    .btn-registrarse{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-movil{
+        display: inline-block;
+    }
+
+    @keyframes barras {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      
     }
 }
