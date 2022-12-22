@@ -10,9 +10,9 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #d69b42;
-    background: -webkit-linear-gradient(left, #e4e1e1, #d69b42);
-    background: -moz-linear-gradient(left, #e4e1e1, #d69b42);
-    background: -o-linear-gradient(left #e4e1e1, #d69b42);
-    background: linear-gradient(to right, #e4e1e1, #d69b42);
+    background: #e4e1e1;
+    background: -webkit-linear-gradient(left, #d69b42, #e4e1e1);
+    background: -moz-linear-gradient(left, #d69b42, #e4e1e1);
+    background: -o-linear-gradient(left #d69b42,#e4e1e1);
+    background: linear-gradient(to right, #d69b42, #e4e1e1);
 }
