@@ -1,24 +1,25 @@
 .panel{
-    height: 50vh;
-    width: 90%;
-    background-image: url(../../../../assets/image/campo.jpg);
+    height: 500px;
+    background-image: url(../../../../assets/image/flor.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 50px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .frase{
-    display: block;
-    justify-content: center;
-    padding: 50px;
-    padding-top: 70px;
+
     font-weight: bold;
-    font-size: 40px;
+    font-size: 3.3em;
     color: #fff;
 }
 span{
-    color: orange;
+    color: #51C4B6;
 }
 span:hover{
     cursor: pointer;
@@ -38,7 +39,6 @@ span:hover{
 }
 .section__title{
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: bold;
@@ -46,42 +46,67 @@ span:hover{
 
 }
 /* PILARES */
+
+.pilares{
+    margin-top: 70px;
+}
+
 .pilares__container{
-    justify-content: center;
-    padding-top: 4rem;
-    grid-template-columns: 250px;
-    row-gap: 5.5rem;
-    grid-template-columns: repeat(3, 262px);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
 }
 
 .pilares__card{
     position: relative;
-    background-color: #fff;
-    padding: 18rem 2rem 1.5rem;
-    box-shadow: 0 8px 20px orange;
+    width: 300px;
+    background-color:transparent;
+    height: 500px;
+    box-shadow: 0 10px 20px #CEB9EF;
+    border: 1px solid #CEB9EF;
     border-radius: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     transition: background 1s;
+    overflow: hidden;
+    padding: 10px;
 }
 
-.pilares__img{
-    height: 250px;
-    width: 230px;
-    position: absolute;
-    inset: 0;
-    top: 2rem;
-    margin: 0 auto;
-    transition: transform .5s;
+
+
+.img-pilares{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img-agro-ambiental{
+    background-image: url('../../../../assets/image/bosque.jpg');
+    
+}
+
+.img-bienes-raices{
+    background-image: url('../../../../assets/image/bienes-raices.jpg');
+    background-position: left;
+}
+
+.img-edu-financiera{
+    background-image: url('../../../../assets/image/img-edufinanzas.jpg');
 }
 
 .pilares__name{
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
     margin-bottom: .25rem;
 }
 
 .pilares__description{
     display: block;
+    text-align: center;
     font-size: 25px;
     margin-bottom: 1rem;
 }
@@ -104,8 +129,37 @@ span:hover{
 }
 
 .pilares__button:hover{
-    background-color: orange;
+    background-color: #CEB9EF;
 }
-.pilares__card:hover .pilares__img{
-    transform: translateY(-.30rem);
+.pilares__card:hover .img-pilares{
+    transition: 0.5s;
+}
+.img-pilar{
+    transition: 1s;
+    height: 100px;
+}
+.pilares__card:hover .img-pilar{
+}
+
+/* animacion */
+@keyframes pilar {
+    0%{
+        width: 300px;
+    };
+
+    25%{
+        width: 200px;
+    }
+    50%{
+        width: 100px;
+    }
+
+    75%{
+        width: 50px;
+    }
+
+    100%{
+        width: 0px;
+    }
+
 }

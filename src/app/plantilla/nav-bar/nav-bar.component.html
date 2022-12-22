@@ -1,17 +1,32 @@
-
 <div #asNavBar class="container-nav">
-    <nav class="panel-navegacion">
-        <a class="container-logo-movil" routerLink="/"><img src="../../../assets/image/logo.svg" alt="logo"></a>
-        <ul>
-            <li class="btn-router" ><a  routerLink="/inicio" ><i class="fa-solid fa-house"></i>Inicio</a></li>
-            <li class="btn-router" ><a routerLink="/quienes-somos"><i class="fa-solid fa-question"></i>Quienes somos</a></li>
-            <li class="btn-router" ><a routerLink="/nosotros"><i class="fa-solid fa-exclamation"></i>Nosotros</a></li>
-        </ul>
-        <a href="#" class="btn-registrarse">Registrarse</a>
-    </nav>
+  <nav class="panel-navegacion">
+    <div class="container-logo">
+      <a class="container-logo-movil" routerLink="/"
+        ><img src="../../../assets/image/logo-removebg.png" alt="logo"/></a>
+      <p class="txt-logo">Corporación Oasis de Sueños</p>
+    </div>
+    <ul>
+      <li class="btn-router">
+        <a routerLink="/inicio"><i class="fa-solid fa-house"></i>Inicio</a>
+      </li>
+      <li class="btn-router">
+        <a routerLink="/quienes-somos"
+          ><i class="fa-solid fa-question"></i>Quienes somos</a
+        >
+      </li>
+      <li class="btn-router">
+        <a routerLink="/nosotros"
+          ><i class="fa-solid fa-exclamation"></i>Nosotros</a
+        >
+      </li>
+    </ul>
+    <a href="#" class="btn-registrarse">Registrarse</a>
+  </nav>
 </div>
 
 <div class="container-btn-nav">
-    <img class="logo-movil" src="../../../assets/image/logo.svg" alt="logo">
-    <button #asBtnBars (click)="activador()" class="btn-bars"><i class="fa-solid fa-bars"></i></button>
+  <img class="logo-movil" src="../../../assets/image/logo.svg" alt="logo" />
+  <button #asBtnBars (click)="activador()" class="btn-bars">
+    <i class="fa-solid fa-bars"></i>
+  </button>
 </div>
