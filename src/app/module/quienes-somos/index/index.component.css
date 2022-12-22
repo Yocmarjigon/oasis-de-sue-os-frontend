@@ -1,0 +1,82 @@
+h1 {
+  background-color: rgba(0, 0, 0, 0.448);
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  color: #fff;
+  padding: 5px 15px;
+}
+.container-title {
+  background-image: url("../../../../assets/image/campo-sol.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+}
+.title-dividido {
+  color: #ffa500;
+}
+.container-contenido {
+  margin-top: 130px;
+  background-color: #fff;
+  padding: 40px 30px;
+}
+
+.container-text-que-somos {
+  display: flex;
+  justify-content: center;
+}
+
+.panel-txt-quienes-somos{
+    width: 1000px;
+}
+
+.logo-negro{
+    width: 300px;
+    
+}
+h2 {
+  padding: 0px 10px;
+}
+
+.text-quienes-somos {
+  width: 800px;
+  padding: 0px 15px;
+  margin: 0px;
+}
+
+
+/* Paneles */
+
+.container-panel {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.panel {
+  width: 400px;
+  height: 300px;
+  background-color: #ffa500;
+  padding: 20px 10px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.451);
+}
+
+.title-panel {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(253, 253, 253, 0.451);
+  border-radius: 50px;
+  margin-bottom: 40px;
+}
+/* _____________ */
+.container-txt-proyecto-vida{
+  background-color: #fff;
+}
+.resaltado-txt{
+  font-size: 1.2em;
+  font-weight: 700;
+}
