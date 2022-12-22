@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NosotrosRoutingModule } from './module/nosotros/nosotros-routing.module';
 import { NavBarComponent } from './plantilla/nav-bar/nav-bar.component';
 
 @NgModule({
@@ -12,9 +13,10 @@ import { NavBarComponent } from './plantilla/nav-bar/nav-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NosotrosRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
