@@ -17,6 +17,7 @@ export class NavBarComponent implements OnInit {
   @ViewChild('asNavBar') navBar!: ElementRef;
   @ViewChild('asBtnBars') btnBars!: ElementRef;
 
+
   activar: boolean= true
 
   constructor( private route: Router ,private render2: Renderer2){}

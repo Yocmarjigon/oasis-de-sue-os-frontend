@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NosotrosRoutingModule } from './module/nosotros/nosotros-routing.module';
 import { NavBarComponent } from './plantilla/nav-bar/nav-bar.component';
+import { FooterComponent } from './plantilla/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
