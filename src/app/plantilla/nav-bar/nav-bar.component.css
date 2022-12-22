@@ -130,6 +130,11 @@ nav ul li a i {
 
     }
 
+    .btn-bars:active{
+        animation-name: barras;
+        animation: infinite alternate ;
+    }
+
     .btn-registrarse{
         width: 80%;
         text-align: center;
