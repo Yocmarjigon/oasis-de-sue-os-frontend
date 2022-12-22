@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,7 +15,7 @@ import { NavBarComponent } from './plantilla/nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NosotrosRoutingModule
+    NosotrosRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
