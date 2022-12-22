@@ -1,4 +1,4 @@
-section{
+.panel{
     height: 50vh;
     width: 90%;
     background-image: url(../../../../assets/image/campo.jpg);
@@ -24,4 +24,88 @@ span:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
+/*Clases reusables */
+.container{
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.section{
+    padding-block: 5rem 1rem;
+}
+.section__title{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+}
 /* PILARES */
+.pilares__container{
+    justify-content: center;
+    padding-top: 4rem;
+    grid-template-columns: 250px;
+    row-gap: 5.5rem;
+    grid-template-columns: repeat(3, 262px);
+}
+
+.pilares__card{
+    position: relative;
+    background-color: #fff;
+    padding: 18rem 2rem 1.5rem;
+    box-shadow: 0 8px 20px orange;
+    border-radius: 1rem;
+    text-align: center;
+    transition: background 1s;
+}
+
+.pilares__img{
+    height: 250px;
+    width: 230px;
+    position: absolute;
+    inset: 0;
+    top: 2rem;
+    margin: 0 auto;
+    transition: transform .5s;
+}
+
+.pilares__name{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: .25rem;
+}
+
+.pilares__description{
+    display: block;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.pilares__button{
+    display: flex;
+    background-color: #fff;
+    padding: 6px;
+    bottom: 2rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 20px hsla(19, 64%, 20%, .2);
+    position: absolute;
+    right: 1.25rem;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+.pilares__button:hover{
+    background-color: orange;
+}
+.pilares__card:hover .pilares__img{
+    transform: translateY(-.30rem);
+}
