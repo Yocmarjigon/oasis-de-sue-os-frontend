@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    border-bottom: 1px solid #fff;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -75,7 +74,6 @@ span:hover{
 }
 
 
-
 .img-pilares{
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +85,6 @@ span:hover{
 }
 .img-agro-ambiental{
     background-image: url('../../../../assets/image/bosque.jpg');
-    
 }
 
 .img-bienes-raices{
@@ -98,7 +95,10 @@ span:hover{
 .img-edu-financiera{
     background-image: url('../../../../assets/image/img-edufinanzas.jpg');
 }
-
+.img-agro-ambiental:hover,
+.img-bienes-raices:hover,
+.img-edu-financiera:hover{
+}
 .pilares__name{
     font-size: 2em;
     margin-bottom: .25rem;
@@ -125,13 +125,15 @@ span:hover{
     position: absolute;
     right: 1.25rem;
     cursor: pointer;
-    transition: background .4s;
+    transition: background .9s;
 }
 
 .pilares__button:hover{
+    transform: translateY(-.25rem);
     background-color: #CEB9EF;
 }
 .pilares__card:hover .img-pilares{
+    transform: translateY(-.25rem);
     transition: 0.5s;
 }
 .img-pilar{
@@ -163,3 +165,72 @@ span:hover{
     }
 
 }
+/* Únete a nuestra corporación */
+.unete-container{
+    margin-top: 100px;
+    /*background-image: url(../../../../assets/image/flor.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;*/
+    text-align: center;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.title__unete{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.info{
+    display: block;
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #51C4B6;
+    font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    border: transparent;
+    transition: 1s;
+}
+.btn:hover{
+    background-color: #CEB9EF;
+    color: black;
+    transform: scale(1.1);
+}
+/*p {
+    animation-duration: 3s;
+    animation-name: initial;
+    transition-delay: 2s;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  }
+  p {
+    animation: 3s infinite alternate slidein;
+  }*/

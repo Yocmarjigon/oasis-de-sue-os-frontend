@@ -17,7 +17,7 @@ import { FooterComponent } from './plantilla/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NosotrosRoutingModule,
+    NosotrosRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
