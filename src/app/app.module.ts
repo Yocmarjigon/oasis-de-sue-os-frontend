@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +12,7 @@ import { FooterComponent } from './plantilla/footer/footer.component';
   declarations: [
     AppComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent, 
   ],
   imports: [
     BrowserModule,
