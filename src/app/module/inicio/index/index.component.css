@@ -1,6 +1,6 @@
 .panel{
     height: 500px;
-    background-image: url(../../../../assets/image/flor.jpg);
+    background-image: url(../../../../assets/image/campo-montañas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,9 +16,11 @@
     font-weight: bold;
     font-size: 3.3em;
     color: #fff;
+    text-shadow: 0px 0px 10px #000;
 }
 span{
-    color: #51C4B6;
+    color: #17A3B8;
+    text-shadow: 0px 0px 7px #000;
 }
 span:hover{
     cursor: pointer;
@@ -33,27 +35,33 @@ span:hover{
     display: grid;
     gap: 1.5rem;
 }
-.section{
-    padding-block: 5rem 1rem;
-}
+
 .section__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 50px;
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: bold;
     color: white;
+    background: #e4e1e1;
+    background: -webkit-linear-gradient(left, #025888, #17A3B8);
+    background: -moz-linear-gradient(left, #025888, #17A3B8);
+    background: -o-linear-gradient(left #025888, #17A3B8);
+    background: linear-gradient(to right, #025888, #17A3B8);
 
 }
 /* PILARES */
-
-.pilares{
-    margin-top: 70px;
-}
 
 .pilares__container{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    height: 800px;
+    background-image: url('../../../../assets/image/Ellipse.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
 
 }
 
@@ -61,16 +69,20 @@ span:hover{
     position: relative;
     width: 300px;
     background-color:transparent;
-    height: 500px;
-    box-shadow: 0 10px 20px #CEB9EF;
-    border: 1px solid #CEB9EF;
-    border-radius: 1rem;
+    height: 630px;
+    box-shadow: 2px 2px 3px #0000007e,-2px -2px 3px #0000007e ;
+    border-radius: 150px;
     display: flex;
     align-items: center;
+    row-gap: 10px;
     flex-direction: column;
     transition: background 1s;
     overflow: hidden;
     padding: 10px;
+}
+
+.card_reverse{
+    flex-direction: column-reverse;
 }
 
 
@@ -80,8 +92,10 @@ span:hover{
     background-position: center;
     height: 300px;
     width: 100%;
-    border-radius: 10px;
+    box-shadow: inset 1px 1px 3px #0000007e, inset -1px -1px 3px #0000007e ;
+    border-radius: 150px;
     overflow: hidden;
+
 }
 .img-agro-ambiental{
     background-image: url('../../../../assets/image/bosque.jpg');
@@ -104,18 +118,18 @@ span:hover{
     margin-bottom: .25rem;
 }
 
-.pilares__description{
-    display: block;
+.pilares__descripcion{
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 1rem;
+}
+
+.icono-pilar{
+    width: 100px;
 }
 
 .pilares__button{
     display: flex;
     background-color: #fff;
     padding: 6px;
-    bottom: 2rem;
     border-radius: 50%;
     border: none;
     outline: none;
@@ -166,17 +180,35 @@ span:hover{
 
 }
 /* Únete a nuestra corporación */
+.container-unete-corp{
+    height: 600px;
+    width: 100%;
+}
+
 .unete-container{
-    margin-top: 100px;
-    /*background-image: url(../../../../assets/image/flor.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    width: 100%;*/
+    background-color: rgba(0, 0, 0, 0.624);
     text-align: center;
     display: block;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container-btn-unete{
+    display: flex;
+    justify-content: center;
+    column-gap:40px;
+}
+
+.opacado{
+    background-image: url(../../../../assets/image/union.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .title__unete{
     padding-top: 40px;
@@ -196,29 +228,61 @@ span:hover{
     margin: auto;
     padding: 40px;
     font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #51C4B6;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 300;
 }
 .btn{
+    cursor: pointer;
+    width:250px;
+    height: 100px;
     display: inline-block;
     text-align: center;
     justify-content: space-between;
     padding: 15px;
-    margin: 30px;
     border-radius: 20px;
-    background-color: transparent;
     font-size: 20px;
     color: #fff;
     font-weight: bold;
     border: transparent;
-    transition: 1s;
+    transition: 0.5s;
 }
 .btn:hover{
-    background-color: #CEB9EF;
-    color: black;
-    transform: scale(1.1);
+    transform: translateY(-20px);
 }
+
+.unete{
+    background-color: transparent;
+    border: 4px solid #A02873;
+}
+
+.unete:hover{
+    box-shadow: inset 70px 70px 10px #A02873,inset -70px -70px 10px #A02873;
+    font-size: 1.6em;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.49);
+}
+
+.corp{
+   background-color: transparent;
+   border: solid 4px #F3B32F;
+}
+
+.corp:hover{
+    box-shadow: inset 70px 70px 10px #F3B32F,inset -70px -70px 10px #F3B32F;
+    font-size: 1.6em;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.49);
+}
+
+.provedor{
+    background-color: transparent;
+    border: 4px solid #17A3B8;
+}
+
+.provedor:hover{
+    box-shadow: inset 70px 70px 10px #17A3B8,inset -70px -70px 10px #17A3B8;
+    font-size: 1.6em;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.49);
+}
+
 /*p {
     animation-duration: 3s;
     animation-name: initial;

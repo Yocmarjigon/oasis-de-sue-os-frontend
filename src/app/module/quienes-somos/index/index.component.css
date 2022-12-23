@@ -15,14 +15,16 @@ h1 {
   position: absolute;
   width: 100%;
   height: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.477);
  
 }
 .title-dividido {
-  color: #C0FBC0;
+  color: #64C1CF;
+  
 }
 .container-contenido {
   margin-top: 130px;
-  background-color: #fff;
+  background-color: #64C1CF;
   padding: 40px 30px;
 }
 
@@ -37,6 +39,9 @@ h1 {
 
 .logo-negro{
     width: 300px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.451), inset -2px -2px 5px rgba(0, 0, 0, 0.451);
+    background-color: #025888;
+    border-radius: 10px;
     
 }
 h2 {
@@ -61,7 +66,7 @@ h2 {
 .panel {
   width: 400px;
   height: 300px;
-  background-color: #9BDAF3;
+  background-color: #fff;
   padding: 20px 10px;
   border-radius: 20px;
   text-align: center;
@@ -69,17 +74,15 @@ h2 {
 }
 
 .title-panel {
-  background-color: #fff;
+  background-color: #64C1CF;
   box-shadow: 1px 1px 10px rgba(253, 253, 253, 0.451);
   border-radius: 50px;
   margin-bottom: 40px;
 }
 /* _____________ */
 .container-txt-proyecto-vida{
-  background-image: url('../../../../assets/image/equipo.jpg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #17A3B8;
+  box-shadow:inset 3px 3px 5px rgba(0, 0, 0, 0.451), inset -3px -3px 5px rgba(0, 0, 0, 0.451);
   height: 700px;
 }
 .resaltado-txt{
