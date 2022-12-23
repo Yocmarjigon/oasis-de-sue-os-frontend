@@ -9,11 +9,3 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    background: #e4e1e1;
-    background: -webkit-linear-gradient(left, #9BDAF3, #FACAD4);
-    background: -moz-linear-gradient(left, #9BDAF3, #FACAD4);
-    background: -o-linear-gradient(left #9BDAF3,#FACAD4);
-    background: linear-gradient(to right, #9BDAF3, #FACAD4);
-
-}
