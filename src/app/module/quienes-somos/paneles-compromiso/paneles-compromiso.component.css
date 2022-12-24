@@ -10,25 +10,31 @@
 .panel {
   width: 400px;
   height: 600px;
-  background-color: #ffffff;
+  background-image: url('../../../../assets/image/Ellipse.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 700px;
   padding: 20px 10px;
   border-radius: 200px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.451), -3px -3px 5px rgba(0, 0, 0, 0.451);
   position: relative;
-  overflow: hidden;
+  z-index: 2;
 }
 
 img {
-  width: 90px;
+  width: 200px;
   position: absolute;
-  top: 40px;
-  right: 45px;
+  top: 100px;
+  right: -100px;
+  z-index: 1;
 }
 
 .title-panel {
   margin-bottom: 30px;
   background-color: #17A3B8;
+  width: 260px;
   padding: 10px;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.451), inset -3px -3px 5px rgba(0, 0, 0, 0.451);
   border-radius: 0px 50px;
   text-align: center;
 }
@@ -38,13 +44,14 @@ ul {
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
-  padding-left: 0px;
-  margin-top: 130px;
+  padding:0px 10px;
+  margin-top: 100px;
 }
 
 li {
   position: relative;
   padding-left: 20px;
+  margin-bottom: 7px;
 }
 
 li::before {
