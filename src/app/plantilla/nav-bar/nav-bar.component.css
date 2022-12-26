@@ -69,13 +69,14 @@ ul li a{
     font-weight: 700;
     padding: 10px;
     border-radius: 10px;
+    transition: .5s;
 }
 
 .btn-registrarse:hover{
     background-color: #0093e9;
     color: #fff;
     box-shadow: 0px 0px 10px #00dbde;
-    transition: .5s;
+    transform: scale(1.1);
 }
 
 ul:hover li a {
