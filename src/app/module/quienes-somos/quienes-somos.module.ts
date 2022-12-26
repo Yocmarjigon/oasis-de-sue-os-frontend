@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { QuienesSomosRoutingModule } from './quienes-somos-routing.module';
 import { IndexComponent } from './index/index.component';
 import { PanelesCompromisoComponent } from './paneles-compromiso/paneles-compromiso.component';
+import { FormaTrabajoComponent } from './forma-trabajo/forma-trabajo.component';
 
 
 @NgModule({
-  declarations: [IndexComponent, PanelesCompromisoComponent],
+  declarations: [IndexComponent, PanelesCompromisoComponent, FormaTrabajoComponent],
   imports: [
     CommonModule,
     QuienesSomosRoutingModule
