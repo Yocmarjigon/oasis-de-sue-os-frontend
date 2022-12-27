@@ -1,42 +1,51 @@
-.panel{
-    height: 500px;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.panel {
+    height: 100vh;
     background-image: url(../../../../assets/image/campo-montañas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: auto;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.frase{
-
+.frase {
     font-weight: bold;
     font-size: 3.3em;
     color: #fff;
     text-shadow: 0px 0px 10px #000;
 }
-span{
+
+span {
     color: #17A3B8;
     text-shadow: 0px 0px 7px #000;
 }
-span:hover{
+
+span:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+
 /*Clases reusables */
-.container{
-    max-width: 1024px;
+.container {
+    max-width: 100%;
     margin-inline: 1.5rem;
 }
-.grid{
+
+.grid {
     display: grid;
     gap: 1.5rem;
 }
 
-.section__title{
+.section__title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,15 +55,16 @@ span:hover{
     font-weight: bold;
     color: white;
     background: #e4e1e1;
-    background: -webkit-linear-gradient(left, #025888, #17A3B8);
-    background: -moz-linear-gradient(left, #025888, #17A3B8);
-    background: -o-linear-gradient(left #025888, #17A3B8);
-    background: linear-gradient(to right, #025888, #17A3B8);
+    background: -webkit-linear-gradient(left, #146fa0, #11d2f0);
+    background: -moz-linear-gradient(left, #146fa0, #11d2f0);
+    background: -o-linear-gradient(left #146fa0, #11d2f0);
+    background: linear-gradient(to right, #146fa0, #11d2f0);
 
 }
+
 /* PILARES */
 
-.pilares__container{
+.pilares__container {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -62,15 +72,14 @@ span:hover{
     background-image: url('../../../../assets/image/Ellipse.svg');
     background-repeat: no-repeat;
     background-position: bottom;
-
 }
 
-.pilares__card{
+.pilares__card {
     position: relative;
     width: 300px;
-    background-color:transparent;
-    height: 630px;
-    box-shadow: 2px 2px 3px #0000007e,-2px -2px 3px #0000007e ;
+    background-color: transparent;
+    height: auto;
+    box-shadow: 2px 2px 3px #0000007e, -2px -2px 3px #0000007e;
     border-radius: 150px;
     display: flex;
     align-items: center;
@@ -81,111 +90,70 @@ span:hover{
     padding: 10px;
 }
 
-.card_reverse{
+.card_reverse {
     flex-direction: column-reverse;
 }
 
 
-.img-pilares{
+.img-pilares {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 300px;
     width: 100%;
-    box-shadow: inset 1px 1px 3px #0000007e, inset -1px -1px 3px #0000007e ;
+    box-shadow: inset 1px 1px 3px #0000007e, inset -1px -1px 3px #0000007e;
     border-radius: 150px;
     overflow: hidden;
 
 }
-.img-agro-ambiental{
+
+.img-agro-ambiental {
     background-image: url('../../../../assets/image/bosque.jpg');
 }
 
-.img-bienes-raices{
+.img-bienes-raices {
     background-image: url('../../../../assets/image/bienes-raices.jpg');
     background-position: left;
 }
 
-.img-edu-financiera{
+.img-edu-financiera {
     background-image: url('../../../../assets/image/img-edufinanzas.jpg');
 }
+
 .img-agro-ambiental:hover,
 .img-bienes-raices:hover,
-.img-edu-financiera:hover{
-}
-.pilares__name{
-    font-size: 2em;
+.img-edu-financiera:hover {}
+
+.pilares__name {
+    font-size: 25px;
     margin-bottom: .25rem;
 }
 
-.pilares__descripcion{
+.pilares__descripcion {
     text-align: center;
 }
 
-.icono-pilar{
+.icono-pilar {
     width: 100px;
 }
 
-.pilares__button{
-    display: flex;
-    background-color: #fff;
-    padding: 6px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    color: black;
-    font-size: 1.25rem;
-    box-shadow: 0 4px 20px hsla(19, 64%, 20%, .2);
-    position: absolute;
-    right: 1.25rem;
-    cursor: pointer;
-    transition: background .9s;
-}
-
-.pilares__button:hover{
-    transform: translateY(-.25rem);
-    background-color: #CEB9EF;
-}
-.pilares__card:hover .img-pilares{
-    transform: translateY(-.25rem);
+.pilares__card:hover .img-pilares {
+    transform: translateY(-5%);
     transition: 0.5s;
 }
-.img-pilar{
+
+.img-pilar {
     transition: 1s;
     height: 100px;
 }
-.pilares__card:hover .img-pilar{
-}
 
-/* animacion */
-@keyframes pilar {
-    0%{
-        width: 300px;
-    };
-
-    25%{
-        width: 200px;
-    }
-    50%{
-        width: 100px;
-    }
-
-    75%{
-        width: 50px;
-    }
-
-    100%{
-        width: 0px;
-    }
-
-}
 /* Únete a nuestra corporación */
-.container-unete-corp{
-    height: 600px;
-    width: 100%;
+.container-unete-corp {
+    height: 100vh;
+    width: auto;
 }
 
-.unete-container{
+.unete-container {
     background-color: rgba(0, 0, 0, 0.624);
     text-align: center;
     display: block;
@@ -196,13 +164,13 @@ span:hover{
     height: 100%;
 }
 
-.container-btn-unete{
+.container-btn-unete {
     display: flex;
     justify-content: center;
-    column-gap:40px;
+    column-gap: 40px;
 }
 
-.opacado{
+.opacado {
     background-image: url(../../../../assets/image/union.jpg);
     background-size: cover;
     background-position: center;
@@ -210,35 +178,38 @@ span:hover{
     width: 100%;
     height: 100%;
 }
-.title__unete{
-    padding-top: 40px;
+
+.title__unete {
+    padding-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: bold;
     color: white;
 }
 
-.info{
-    display: block;
+.info {
+    display: flex;
     align-items: center;
     margin: auto;
     padding: 40px;
-    font-size: 24px;
+    padding-bottom: 50px;
+    font-size: 30px;
     color: #fff;
     font-weight: 300;
 }
-.btn{
+
+.btn {
     cursor: pointer;
-    width:250px;
+    width: auto;
     height: 100px;
     display: inline-block;
     text-align: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 30px;
     border-radius: 20px;
     font-size: 20px;
     color: #fff;
@@ -246,55 +217,52 @@ span:hover{
     border: transparent;
     transition: 0.5s;
 }
-.btn:hover{
+
+.btn:hover {
     transform: translateY(-20px);
 }
 
-.unete{
+.unete {
     background-color: transparent;
     border: 4px solid #A02873;
 }
 
-.unete:hover{
-    box-shadow: inset 70px 70px 10px #A02873,inset -70px -70px 10px #A02873;
+.unete:hover {
+    box-shadow: inset 70px 70px 10px #A02873, inset -70px -70px 10px #A02873;
     font-size: 1.6em;
     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.49);
 }
 
-.corp{
-   background-color: transparent;
-   border: solid 4px #F3B32F;
-}
-
-.corp:hover{
-    box-shadow: inset 70px 70px 10px #F3B32F,inset -70px -70px 10px #F3B32F;
-    font-size: 1.6em;
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.49);
-}
-
-.provedor{
+.corp {
     background-color: transparent;
-    border: 4px solid #17A3B8;
+    border: solid 4px #F3B32F;
 }
 
-.provedor:hover{
-    box-shadow: inset 70px 70px 10px #17A3B8,inset -70px -70px 10px #17A3B8;
+.corp:hover {
+    box-shadow: inset 70px 70px 10px #F3B32F, inset -70px -70px 10px #F3B32F;
     font-size: 1.6em;
     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.49);
 }
 
-/*p {
-    animation-duration: 3s;
-    animation-name: initial;
-    transition-delay: 2s;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%
+.provedor {
+    background-color: transparent;
+    border: 4px solid #11d2f0;
+}
+
+.provedor:hover {
+    box-shadow: inset 70px 70px 10px #17A3B8, inset -70px -70px 10px #17A3B8;
+    font-size: 1.6em;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.49);
+}
+
+@media screen and (max-width: 500px) {
+    .title__unete{
+        font-size: 30px;
     }
-  }
-  p {
-    animation: 3s infinite alternate slidein;
-  }*/
+    .info{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 20px;
+    }
+}
