@@ -6,10 +6,7 @@
   padding: 50px 200px;
   margin-top: 300px;
   position: relative;
-  /* background-image: url('../../../../assets/image/camino-flores.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; */
+  background-image: linear-gradient(90deg, #00dbde 0%, #1900ff 100%);
 }
 
 .img-numeros {
@@ -22,11 +19,8 @@
   background-color: transparent;
   position: relative;
   border-radius: 150px 10px;
-}
-.panel > h2{
-  color: #fff;
-  box-shadow: 0px 2px 2px #fff;
-  padding: 0px 0px 0px 30px;
+  box-shadow: 0px 5px 30px #fff, 0px -5px 30px #fff, inset 0px 5px 30px #fff,
+    inset 0px -5px 30px #fff;
 }
 
 .panel-1,
@@ -36,88 +30,6 @@
   align-self: flex-start;
 }
 
-.panel-1{
-  box-shadow: 0px 5px 30px #A9C3F3, 0px -5px 30px #A9C3F3, inset 0px 5px 30px #A9C3F3,
-    inset 0px -5px 30px #A9C3F3;
-    color: #A9C3F3;
-}
-
-.panel-1 > h2{
-  color: #A9C3F3;
-  box-shadow: 0px 2px 2px #A9C3F3;
-}
-
-.panel-2{
-  box-shadow: 0px 5px 30px #51C4B6, 0px -5px 30px #51C4B6, inset 0px 5px 30px #51C4B6,
-    inset 0px -5px 30px #51C4B6;
-}
-
-.panel-2 > h2{
-  color: #51C4B6;
-  box-shadow: 0px 2px 2px #51C4B6;
-}
-
-.panel-3{
-  box-shadow: 0px 5px 30px #F6E061, 0px -5px 30px #F6E061, inset 0px 5px 30px #F6E061,
-  inset 0px -5px 30px #F6E061;
-}
-
-
-.panel-3 > h2{
-  color: #F6E061;
-  box-shadow: 0px 2px 2px #F6E061;
-}
-
-
-.panel-4{
-  box-shadow: 0px 5px 30px #F783DD, 0px -5px 30px #F783DD, inset 0px 5px 30px #F783DD,
-  inset 0px -5px 30px #F783DD;
-}
-
-
-.panel-4 > h2{
-  color: #F783DD;
-  box-shadow: 0px 2px 2px #F783DD;
-}
-
-.panel-5{
-  box-shadow: 0px 5px 30px #C2BFFB, 0px -5px 30px #C2BFFB, inset 0px 5px 30px #C2BFFB,
-  inset 0px -5px 30px #C2BFFB;
-}
-
-
-.panel-5 > h2{
-  color: #C2BFFB;
-  box-shadow: 0px 2px 2px #C2BFFB;
-}
-
-
-
-.panel-6{
-  box-shadow: 0px 5px 30px #F6E061, 0px -5px 30px #F6E061, inset 0px 5px 30px #F6E061,
-  inset 0px -5px 30px #F6E061;
-}
-
-
-.panel-6 > h2{
-  color: #F6E061;
-  box-shadow: 0px 2px 2px #F6E061;
-}
-
-
-
-.panel-7{
-  box-shadow: 0px 5px 30px #6C6876, 0px -5px 30px #6C6876, inset 0px 5px 30px #6C6876,
-  inset 0px -5px 30px #6C6876;
-}
-
-
-.panel-7 > h2{
-  color: #6C6876;
-  box-shadow: 0px 2px 2px #6C6876;
-}
-
-
 .panel-2,
 .panel-4,
 .panel-6 {
@@ -125,7 +37,7 @@
 }
 
 .panel > p {
-  color: rgb(45, 44, 44);
+  color: #fff;
   padding: 20px;
   text-align: end;
 }
