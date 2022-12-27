@@ -7,6 +7,8 @@
 .footer__container{
     row-gap: 10rem;
     background-color: #36cae1;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .footer__logo{
@@ -86,7 +88,7 @@
 
 .footer__social-link:hover{
     color: aliceblue;
-    transform: translateY(-2px);
+    transform: translateY(-20%);
 }
 
 .footer__info,
