@@ -1,0 +1,169 @@
+h1 {
+  background-color: rgba(0, 0, 0, 0.448);
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  color: #fff;
+  padding: 5px 15px;
+  border-bottom: 1px solid #ffff;
+}
+.container-title {
+  background-image: url("../../../../assets/image/campo-montañas.jpg");
+  background-position: left;
+  background-size: cover;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.477);
+ 
+}
+.title-dividido {
+  color: #64C1CF;
+  
+}
+.container-contenido {
+  margin-top: 130px;
+  background-color: #64C1CF;
+  padding: 40px 30px;
+}
+
+.container-text-que-somos {
+  display: flex;
+  justify-content: center;
+}
+
+.panel-txt-quienes-somos{
+    width: 1000px;
+}
+
+.logo-negro{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+h2 {
+  padding: 0px 10px;
+  color: rgb(53, 53, 53);
+}
+
+.text-quienes-somos {
+  width: 800px;
+  padding: 0px 15px;
+  margin: 0px;
+}
+
+
+/* Paneles */
+
+.container-panel {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.panel {
+  transform: rotate(20deg);
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.451);
+}
+
+.p1{
+  transform: rotate(-20deg);
+
+}
+
+
+.title-panel {
+  background-color: #64C1CF;
+  box-shadow: 1px 1px 10px rgba(253, 253, 253, 0.451);
+  border-radius: 50px;
+  margin-bottom: 40px;
+}
+/* _____________ */
+.container-txt-proyecto-vida{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.resaltado-txt{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.container-txt-proyecto-vida p {
+  color: #ffff;
+  padding: 20px;
+  position: relative;
+
+}
+
+.parrafo-1, .parrafo-2, .parrafo-3{
+  height: 200px;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.451);
+  transition: .7s;
+
+}
+
+.parrafo-1:hover{
+  width: 1200px;
+}
+.parrafo-2:hover{
+  width: 1000px;
+} 
+.parrafo-3:hover{
+  width: 800px;
+}
+
+
+.parrafo-1{
+  width: 1100px;
+  margin-top: 150px;
+  background-color: #51C4B6;
+}
+
+.parrafo-2{
+  width: 900px;
+  background-color: #65caf2;
+}
+
+.parrafo-3{
+  width: 700px;
+  background-color: #0C7DA0;
+}
+
+.icono-proyecto{
+  width: 100px;
+  position: absolute;
+  left: -130px;
+  top: 35px;
+  border-radius: 50px 0px;
+  box-sizing: content-box;
+  padding: 20px;
+  box-shadow: inset 3px 0px 5px rgba(0, 0, 0, 0.451), inset -3px 0px 5px rgba(0, 0, 0, 0.451);
+  transition: .5s;
+}
+
+.icono-proyecto:hover{
+    transform: scale(1.1);
+}
+
+.icono-1{
+  background-color: #0C7DA0;
+  
+}
+
+.icono-2{
+  background-color: #64C1CF;
+  
+}
+
+.icono-3{
+  background-color: #65caf2;
+}
+
