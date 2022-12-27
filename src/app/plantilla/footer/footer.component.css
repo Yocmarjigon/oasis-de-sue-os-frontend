@@ -6,7 +6,7 @@
 
 .footer__container{
     row-gap: 10rem;
-    background-color: #51C4B6;
+    background-color: #36cae1;
 }
 
 .footer__logo{
@@ -31,9 +31,10 @@
     
 }
 .footer__description{
-    text-align: center;
-    padding: 10px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 .footer__description,
 .footer__link,
